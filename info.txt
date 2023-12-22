@@ -1,0 +1,15 @@
+Project
+
+They use 2 img classifcitation models they MLM they detect:
+	Hand landmark detection
+	Palm detection
+
+21 landmarks detected
+
+MediaPipe to track hands in realtime:
+mphands = mp.solutions.hands
+hands = mphands.Hands()	
+
+To draw hands on an image:
+mp_drawing = mp.solutions.drawing_utils
+mp_drawing.draw_landmarks
