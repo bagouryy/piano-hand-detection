@@ -1,0 +1,134 @@
+PROGRAM REQUIREMENTS
+
+Course List
+CODE	TITLE	UNITS
+1. CORE
+A. Complete the following:	
+CISC 121	Introduction to Computing Science I	3.00
+CISC 124	Introduction to Computing Science II	3.00
+B. Complete 3.00 units from the following:	3.00
+STAT 263
+Introduction to Statistics	
+STAT 268
+Statistics and Probability I	
+STAT 351
+Probability I	
+STAT_Options
+C. Complete the following:	
+CISC 203	Discrete Mathematics for Computing II	3.00
+CISC 204	Logic for Computing Science	3.00
+CISC 221	Computer Architecture	3.00
+CISC 223	Software Specifications	3.00
+CISC 235	Data Structures	3.00
+D. Complete 3.00 units from the following:	3.00
+CISC 322
+Software Architecture	
+CISC 326
+Game Architecture	
+E. Complete the following:	
+CISC 324	Operating Systems	3.00
+CISC 360	Programming Paradigms	3.00
+CISC 365	Algorithms I	3.00
+F. Complete the following:	
+CISC 497	Social, Ethical and Legal Issues in Computing	3.00
+G. Complete 3.00 units from the following:	3.00
+CISC 495
+Software Evolution	
+CISC 496
+Game Development Project	
+CISC 499
+Advanced Undergraduate Project	
+CISC 500
+Undergraduate Thesis	
+2. OPTION
+A. Complete 15.00 units from one of the following options:	15.00
+iv. Artificial Intelligence
+B. Complete 3.00 units from the following:	3.00
+CISC, COCA, COGS, or SOFT at the 200-level or above
+3. SUPPORTING
+A. Complete 6.00 units from the following:	6.00
+CISC 102
+& MATH 111
+Discrete Mathematics for Computing l
+and Linear Algebra	
+CISC 102
+& MATH 112
+Discrete Mathematics for Computing l
+and Introduction to Linear Algebra	
+MATH 110
+Linear Algebra	
+B. Complete 6.00 units from the following:	6.00
+MATH 120
+Differential and Integral Calculus	
+MATH 121
+Differential and Integral Calculus	
+MATH 123
+& MATH 124
+Differential and Integral Calculus I
+and Differential and Integral Calculus II	
+Electives	
+Elective Courses	48.00
+Total Units	120.00
+OPTION LIST
+
+IV. ARTIFICIAL INTELLIGENCE
+
+Course List
+CODE	TITLE	UNITS
+a. Complete the following:	
+COGS 100	Introduction to Cognitive Science	3.00
+COGS 201	Cognition and Computation	3.00
+CISC 352	Artificial Intelligence	3.00
+b. Complete 6.00 units from the following course list:	6.00
+CISC_Artificial_Intelligence
+Total Units	15.00
+4. SUBSTITUTIONS
+
+A. Students in the internship version of this Plan will substitute 3.00 units from COMP at the 300-level for requirement 1.G. (CISC 496 or CISC 499 or CISC 500). In addition, the B.Cmp.(Hons.) Program requirements will be increased by 6.00 units from COMP at the 300-level, for a total of 126.00 units if the student is taking a 12-month internship, or by 9.00 units from COMP at the 300-level, for a total of 129.00 units if the student is taking a 16-month internship.
+
+5. NOTES
+
+A. Students with no programming experience should review the Introductory Courses paragraph included on the School of Computing overview page in the Calendar. 
+
+B. ELEC courses are offered by the Faculty of Engineering and Applied Science. Special permission may be required to register. All such courses will count as 3.00 units towards degree requirements in Arts and Science.
+
+C. Students should consider the following courses to complement their option courses. Data Analytics: Students interested in machine learning or artificial intelligence can take CISC 473. Game Development: Students with interests the arts can take COCA 201. Students with interests in analytics or machine learning can take CISC 271. Students with interests in human-computer interaction can take CISC 325.
+
+D. A maximum of 6.00 units from courses offered by other Faculties and Schools may be counted toward the program and/or Plan requirements. This includes courses in BMED, COMM, GLPH, HSCI, LAW, NURS, and courses in the Faculty of Engineering and Applied Science. 
+
+COMPUTING COURSE LIST
+
+The following list contains courses offered through other Departments. In accordance with Academic Regulation 2.6 (Access to Classes), students do not have enrolment priority in all of these courses. Access to these courses may only be made available during the Open Enrolment period, and then only if space permits.
+
+CISC_ARTIFICIAL_INTELLIGENCE
+
+Course List
+CODE	TITLE	UNITS
+Artificial Intelligence Option Courses	
+CISC 351	Advanced Data Analytics	3.00
+CISC 371	Nonlinear Data Analysis	3.00
+CISC 372	Advanced Data Analytics	3.00
+CISC 451	Topics in Data Analytics	3.00
+CISC 452	Neural and Genetic Computing	3.00
+CISC 453	Topics in Artificial Intelligence	3.00
+CISC 455	Evolutionary Optimization and Learning	3.00
+CISC 467	Fuzzy Logic	3.00
+CISC 473	Deep Learning	3.00
+CISC 474	Reinforcement Learning	3.00
+STAT_OPTIONS
+
+Course List
+CODE	TITLE	UNITS
+Statistic Course Options	
+BIOL 243	Introduction to Statistics	3.00
+CHEE 209	Analysis Of Process Data	3.00
+COMM 162	Managerial Statistics	3.00
+ECON 250	Introduction to Statistics	3.00
+GPHY 247	Introduction to Statistics	3.00
+KNPE 251	Introduction to Statistics	3.00
+NURS 323	Introduction to Statistics	3.00
+POLS 285	Introduction to Statistics	3.00
+PSYC 202	Statistics in Psychology	3.00
+SOCY 211	Introduction to Statistics	3.00
+STAM 200	Introduction to Statistics	3.00
+STAT 263	Introduction to Statistics	3.00

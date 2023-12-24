@@ -62,8 +62,19 @@ min_tracking_confidence=0.5)
 
 		image = cv2.resize(image, (1280, 720))
 
-		overlay = cv2.imread('piano.png')
-		overlay = cv2.resize(overlay, (int(1280/2), int(720/2)))
+		overlay = cv2.imread('piano-2.png')
+		#n1 = cv2.imread('n-1.png')		
+		#n2 = cv2.imread('n-2.png')
+		#n3 = cv2.imread('n-3.png')
+		#n4 = cv2.imread('n-4.png')
+
+
+		overlay = cv2.resize(overlay, (int(1280/9 * 7), int(288)))
+
+		#n1 = cv2.resize(n1, (int(1280/9), int(144)))
+		#n2 = cv2.resize(n2, (int(1280/9), int(144)))
+		#n3 = cv2.resize(n3, (int(1280/9), int(144)))
+		#n4 = cv2.resize(n4, (int(1280/9), int(144)))
 
 # Get dimensions of the background image
 		h, w = image.shape[:2]
@@ -89,92 +100,71 @@ min_tracking_confidence=0.5)
 		if results.left_hand_landmarks: #if image contains landmarks
 			landmarks_left = results.left_hand_landmarks.landmark
 
-			for i in fingers:
-				landmarks.append((int(landmarks_left[i].x * image.shape[1]),int(landmarks_left[i].y * image.shape[0])))
-
-			if int(landmarks[8].x * image.shape[1]) > 325 and int(landmarks[8].x * image.shape[1]) < 415 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("C")
-			elif int(landmarks[8].x * image.shape[1]) > 415 and int(landmarks[8].x * image.shape[1]) < 505 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("D")
-			elif int(landmarks[8].x * image.shape[1]) > 505 and int(landmarks[8].x * image.shape[1]) < 595 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("E")
-			elif int(landmarks[8].x * image.shape[1]) > 595 and int(landmarks[8].x * image.shape[1]) < 685 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("F")
-			elif int(landmarks[8].x * image.shape[1]) > 685 and int(landmarks[8].x * image.shape[1]) < 775 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("G")
-			elif int(landmarks[8].x * image.shape[1]) > 775 and int(landmarks[8].x * image.shape[1]) < 865 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("A")
-			elif int(landmarks[8].x * image.shape[1]) > 865 and int(landmarks[8].x * image.shape[1]) < 955 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("B")
-
-
-
-
-			cv2.circle(image,(int(landmarks[8].x * image.shape[1]),int(landmarks[8].y * image.shape[0])),30,(0, 165, 255),-1)
-			if(distance(int(landmarks[8].x * image.shape[1]),int(landmarks[8].y * image.shape[0]),int(landmarks[4].x * image.shape[1]),int(landmarks[4].y * image.shape[0])) < 50):
-				count += 1
-			else:
-				count = 0
-			if count == 6:
-				previous = []
-				count = 0
-			if previous:
-				if distance(int(landmarks[8].x * image.shape[1]),int(landmarks[8].y * image.shape[0]),previous[-1][0],previous[-1][1]) < 100:
-					previous.append((int(landmarks[8].x * image.shape[1]), int(landmarks[8].y * image.shape[0])))
-			else:
-					previous.append((int(landmarks[8].x * image.shape[1]), int(landmarks[8].y * image.shape[0])))
-
-		for (x,y) in landmarks:
-			if int(landmarks[8].x * image.shape[1]) > 325 and int(landmarks[8].x * image.shape[1]) < 415 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("C")
-			elif int(landmarks[8].x * image.shape[1]) > 415 and int(landmarks[8].x * image.shape[1]) < 505 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("D")
-			elif int(landmarks[8].x * image.shape[1]) > 505 and int(landmarks[8].x * image.shape[1]) < 595 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("E")
-			elif int(landmarks[8].x * image.shape[1]) > 595 and int(landmarks[8].x * image.shape[1]) < 685 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("F")
-			elif int(landmarks[8].x * image.shape[1]) > 685 and int(landmarks[8].x * image.shape[1]) < 775 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("G")
-			elif int(landmarks[8].x * image.shape[1]) > 775 and int(landmarks[8].x * image.shape[1]) < 865 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("A")
-			elif int(landmarks[8].x * image.shape[1]) > 865 and int(landmarks[8].x * image.shape[1]) < 955 and int(landmarks[8].y * image.shape[0]) < 360:
-				playc("B")
-		
-
 		if results.right_hand_landmarks: #if image contains landmarks
-			landmarks = results.right_hand_landmarks.landmark
-			if int(landmarks[8].x * image.shape[1]) > 325 and int(landmarks[8].x * image.shape[1]) < 415 and int(landmarks[8].y * image.shape[0]) < 360:
+			landmarks_right = results.right_hand_landmarks.landmark
+
+		for i in fingers:
+				if landmarks_left:
+					landmarks.append((int(landmarks_left[i].x * image.shape[1]),int(landmarks_left[i].y * image.shape[0])))
+				if landmarks_right:
+					landmarks.append((int(landmarks_right[i].x * image.shape[1]),int(landmarks_right[i].y * image.shape[0])))
+
+		image[cy:cy + h1, cx:cx + w1] = overlay
+		for (x,y) in landmarks:
+			if x > 144 and x < 216 and y < 288:
 				playc("C")
-			elif int(landmarks[8].x * image.shape[1]) > 415 and int(landmarks[8].x * image.shape[1]) < 505 and int(landmarks[8].y * image.shape[0]) < 360:
+			elif x > 187 and x < 240 and y < 180: # Note for C#
+				print("C#")
+			elif x > 258 and x < 310 and y < 180: # Note for D#
+				print("D#")
+			elif x > 399 and x < 452 and y < 180: # Note for F#
+				print("F#")
+			elif x > 470 and x < 522 and y < 180: # Note for G#
+				print("G#")
+			elif x > 542 and x < 594 and y < 180: # Note for A#
+				print("A#")
+			elif x > 685 and x < 738 and y < 180: # Note for C#
+				print("C#")
+			elif x > 756 and x < 810 and y < 180: # Note for D#
+				print("D#")
+			elif x > 898 and x < 950 and y < 180: # Note for F#
+				print("F#")
+			elif x > 970 and x < 1023 and y < 180: # Note for G#
+				print("G#")
+			elif x > 1040 and x < 1092 and y < 180: # Note for A#
+				print("A#")
+			
+			elif x > 216 and x < 288 and y < 288:
 				playc("D")
-			elif int(landmarks[8].x * image.shape[1]) > 505 and int(landmarks[8].x * image.shape[1]) < 595 and int(landmarks[8].y * image.shape[0]) < 360:
+			elif x > 288 and x < 360 and y < 288:
 				playc("E")
-			elif int(landmarks[8].x * image.shape[1]) > 595 and int(landmarks[8].x * image.shape[1]) < 685 and int(landmarks[8].y * image.shape[0]) < 360:
+			elif x > 360 and x < 432 and y < 288:
 				playc("F")
-			elif int(landmarks[8].x * image.shape[1]) > 685 and int(landmarks[8].x * image.shape[1]) < 775 and int(landmarks[8].y * image.shape[0]) < 360:
+			elif x > 432 and x < 504 and y < 288:
 				playc("G")
-			elif int(landmarks[8].x * image.shape[1]) > 775 and int(landmarks[8].x * image.shape[1]) < 865 and int(landmarks[8].y * image.shape[0]) < 360:
+			elif x > 504 and x < 576 and y < 288:
 				playc("A")
-			elif int(landmarks[8].x * image.shape[1]) > 865 and int(landmarks[8].x * image.shape[1]) < 955 and int(landmarks[8].y * image.shape[0]) < 360:
+			elif x > 576 and x < 648 and y < 288:
+				playc("B")
+			elif x > 648 and x < 720 and y < 288:
+				playc("C")
+			elif x > 720 and x < 792 and y < 288:
+				playc("D")
+			elif x > 792 and x < 864 and y < 288:
+				playc("E")
+			elif x > 864 and x < 936 and y < 288:
+				playc("F")
+			elif x > 936 and x < 1008 and y < 288:
+				playc("G")
+			elif x > 1008 and x < 1100 and y < 288:
+				playc("A")
+			elif x > 1100 and x < 1172 and y < 288:
 				playc("B")
 
+			cv2.circle(image,(x,y),10,(0, 165, 255),-1)
 
 
-
-			cv2.circle(image,(int(landmarks[8].x * image.shape[1]),int(landmarks[8].y * image.shape[0])),30,(0, 165, 255),-1)
-			if(distance(int(landmarks[8].x * image.shape[1]),int(landmarks[8].y * image.shape[0]),int(landmarks[4].x * image.shape[1]),int(landmarks[4].y * image.shape[0])) < 50):
-				count += 1
-			else:
-				count = 0
-			if count == 6:
-				previous = []
-				count = 0
-			if previous:
-				if distance(int(landmarks[8].x * image.shape[1]),int(landmarks[8].y * image.shape[0]),previous[-1][0],previous[-1][1]) < 100:
-					previous.append((int(landmarks[8].x * image.shape[1]), int(landmarks[8].y * image.shape[0])))
-			else:
-					previous.append((int(landmarks[8].x * image.shape[1]), int(landmarks[8].y * image.shape[0])))
-		image[cy:cy + h1, cx:cx + w1] = overlay
+			
 		#for i in range(1,len(previous) - 1): 
 			#cv2.line(image,previous[i-1],previous[i],(255,0,0),10)
 		#if len(previous) > 1:
