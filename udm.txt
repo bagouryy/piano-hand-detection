@@ -1,12 +1,13 @@
 3.0 Crédits
 Bloc 76B Génie logiciel
 Option - Minimum 3 crédits, maximum 9 crédits.
-IFT 3911 Analyse et conception des logiciels
+
+@IFT 3911 Analyse et conception des logiciels
 Ingénierie des besoins. Méthodes de spécification formelle. Principes, méthodes et notations de conception. Description et styles d'architectures logicielles. Composantes logicielles, patrons de conception et cadres d'application.
 
 Horaire de jour
 3.0 Crédits
-IFT 3913 Qualité du logiciel et métriques
+@IFT 3913 Qualité du logiciel et métriques
 Définition et promotion de la qualité. Assurance qualité. Plan de qualité. Amélioration et contrôle de qualité (tests, revue, inspections). Normes et cadres de qualité. Théorie de la mesure. Métriques de produit et de processus. Métriques de qualité.
 
 Horaire de jour
@@ -30,11 +31,11 @@ Introduction aux applications web et organisation des sites web. XML, schémas X
 
 Horaire de jour et de soir
 3.0 Crédits
-IFT 3245 Simulation et modèles
+@IFT 3245 Simulation et modèles
 Modèles de simulation. Simulations continues et à événements discrets. Modélisation stochastique. Validation et réalisme. Analyse des résultats. Technique de réduction de la variance. Génération de valeurs pseudoaléatoires.
 
 3.0 Crédits
-IFT 3275 Sécurité informatique
+@IFT 3275 Sécurité informatique
 Confidentialité et intégrité des données à clé privée et publique. Protection des couches de protocoles TCP/IP; protection contre les parasites informatiques. Méthodes d'authentification d'usagers. Évaluation et gestion des risques.
 
 Horaire de jour
@@ -49,7 +50,7 @@ Architecture des systèmes répartis. Modèle de référence OSI. Introduction a
 
 Horaire de jour et de soir
 3.0 Crédits
-IFT 3335 Intelligence artificielle : introduction
+@IFT 3335 Intelligence artificielle : introduction
 Résolution heuristique de problèmes. Représentation des connaissances. Techniques d'inférence et de planification. Étude d'un langage approprié. Traitement de langue naturelle. Apprentissage. Systèmes experts.
 
 Horaire de jour et de soir
@@ -64,7 +65,7 @@ Modèles du calcul. Calculabilité et décidabilité. Complexité. Hiérarchies.
 
 Horaire de jour
 3.0 Crédits
-IFT 3395 Fondements de l'apprentissage machine
+@IFT 3395 Fondements de l'apprentissage machine
 Éléments de base des algorithmes d'apprentissage statistique et symbolique. Exemples d'applications en forage de données, reconnaissance des formes, régression non linéaire, et données temporelles. Remarques: Des connaissances d'analyse numérique sont recommandées, par exemple le IFT 2425.
 
 Horaire de jour
@@ -86,29 +87,17 @@ IFT 3700 Introduction à la science des données
 Mise en contexte et applications des probabilités, statistiques, optimisation et outils informatiques pour la science des données; nettoyage et visualisation de données; enjeux statistiques de l'apprentissage automatique sur données structurées.
 
 Horaire de jour
-3.0 Crédits
-STT 2700 Concepts et méthodes en statistique
-Estimation ponctuelle et par intervalle. Tests d'hypothèses. Méthodes graphiques. Test du khi-deux. Théorie de la décision et inférence bayésienne. Comparaisons de deux échantillons. Lié aux examens CAS et agrément ICA.
-
-Horaire de jour et de soir
-3.0 Crédits
 Bloc 76D Projet et stage
 Option - Maximum 6 crédits.
-IFT 3150 Projet d'informatique
+@IFT 3150 Projet d'informatique
 Projet défini et encadré par un professeur associé à un laboratoire de recherche universitaire. Remarques: Préalables explicites selon la nature du projet.
 
-Horaire de jour
-3.0 Crédits
-IFT 3151 Stage d'informatique
-Stage en milieu de travail, donnant lieu à un rapport, évalué conjointement par l'employeur et un jury du DIRO.
-
-Horaire de jour
-3.0 Crédits
 IFT 3710 Projets en aprentissage automatique
 Préparation aux applications pratiques de l'apprentissage automatique à travers des projets concrets sur les données réelles. Utilisation de logiciels spécialisés d'apprentissage automatique pour l'intelligence artificielle.
 
 Horaire de jour
 3.0 Crédits
+
 Segment 77 Propre à l'orientation COOP
 
 Les crédits de l'Orientation sont répartis de la façon suivante : 15 crédits obligatoires et 12 crédits à option.
@@ -117,31 +106,7 @@ Pour être inscrit à l'orientation COOP, l'étudiant doit avoir réussi 30 cré
 
 3.0 Crédits
 Bloc 77B Génie logiciel
-Option - Minimum 3 crédits, maximum 9 crédits.
-IFT 3911 Analyse et conception des logiciels
-Ingénierie des besoins. Méthodes de spécification formelle. Principes, méthodes et notations de conception. Description et styles d'architectures logicielles. Composantes logicielles, patrons de conception et cadres d'application.
 
-Horaire de jour
-3.0 Crédits
-IFT 3913 Qualité du logiciel et métriques
-Définition et promotion de la qualité. Assurance qualité. Plan de qualité. Amélioration et contrôle de qualité (tests, revue, inspections). Normes et cadres de qualité. Théorie de la mesure. Métriques de produit et de processus. Métriques de qualité.
-
-Horaire de jour
-
-3.0 Crédits
-IFT 3550 Stage d'informatique 2
-Deuxième stage du programme COOP, en milieu de travail, donnant lieu à un rapport, évalué conjointement par l'employeur et un jury du DIRO.
-
-Horaire de jour
-3.0 Crédits
-IFT 3551 Stage d'informatique 3
-Troisième stage du programme COOP, en milieu de travail, donnant lieu à un rapport, évalué conjointement par l'employeur et un jury du DIRO.
-3.0 Crédits
-Bloc 77D Cours complémentaires
-Option - Minimum 3 crédits, maximum 9 crédits.
-
-Horaire de jour et de soir
-3.0 Crédits
 IFT 3065 Langages de programmation et compilation
 Méthodes de compilation et interprétation des langages de programmation. Génération de code, optimisation, transformations de programme. Gestion de la mémoire. Implantation des langages spécialisés.
 3.0 Crédits
